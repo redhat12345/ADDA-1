@@ -30,9 +30,9 @@ python main.py --step=1 --epoch=20
 # Result
 ||MNIST(Source)|USPS(Target)|
 |:--|:--:|:--:|
-|Source Encoder + Source Classifier|99.23%|78.62%|
-|Target Encoder + Source Classifier|-|%|
-
+|Source Encoder + Source Classifier|99.23%|78.52%|
+|Target Encoder + Source Classifier|-|91.38%|
+* Target accuracy: 78.52%(without adapting) vs 91.38%(Adapted)
 # Visualization result
 * MNIST and USPS distribute in 2-dimension and feature map of encoder output after adaptation
 

@@ -148,7 +148,7 @@ def step2(source,target,epoch,batch_size=64,
         for j in var_t_g:
             if i[0][1:] in j.name[1:]:
                 dict_var[i[0]]=j 
-    print(dict_var)
+    #print(dict_var)
     fine_turn_saver = tf.train.Saver(var_list = dict_var)
     #assert False 
     # create this model saver
@@ -179,7 +179,7 @@ def step2(source,target,epoch,batch_size=64,
             if i % 20 == 0:
                 print("step:{},g_loss:{:.4f},d_loss:{:.4f}".format(i,g_loss_,d_loss_))
             
-            if i%100 == 0:
+            if i%100 == 0 or i>(epoch-100):
                 sess.run([s_init,t_init])
                 s_acc,t_acc,sx,sfe,sl,tx,tfe,tl = sess.run([acc_te_s,acc_te_t,s_x_te,logits_s_te,s_y_te,t_x_te,logits_t_te,t_y_te])
                 eval_acc.append(t_acc)
