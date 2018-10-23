@@ -1,5 +1,5 @@
 # Adversarial Discriminative Domain Adaptation
-A tensorflow implement of ![ADDA](cpipc.chinadegrees.cn)
+A tensorflow implement of [ADDA](cpipc.chinadegrees.cn)
 ## Environment
 * python 3
 * tensorflow 1.09
