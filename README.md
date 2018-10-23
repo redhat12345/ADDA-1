@@ -8,6 +8,7 @@ A tensorflow implement of ![ADDA](cpipc.chinadegrees.cn)
 * numpy 1.14.2
 
 ## Network
+Network achitecture referenced LeNet for mnist digits datasets.
 * For encoder:
     * 3 x Conv + 1 x Linear
 * For classifier:
