@@ -34,7 +34,7 @@ python main.py --step=1 --epoch=20
 |Source Encoder + Source Classifier|99.23%|78.52%|
 |Target Encoder + Source Classifier|-|91.38%|
 * Target accuracy: 78.52%(without adapting) vs 91.38%(Adapted)
-# Visualization result
-* MNIST and USPS distribute in 2-dimension and feature map of encoder output after adaptation
+# Visualization result using t-SNE
+* Orign imageand feature map of encoder output after adaptation
 
 ![before](./result/Samples_before_adaptation.jpg)![after](./result/Samples_after_adaptation.jpg)
