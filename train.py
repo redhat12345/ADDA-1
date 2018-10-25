@@ -174,7 +174,8 @@ def step2(source,target,epoch,batch_size=64,
         print("model init successfully!")
         filewriter = tf.summary.FileWriter(logdir=logdir,graph=sess.graph)
         for i in range(epoch):
-            _,d_loss_,_,g_loss_,merge_ = sess.run([optim_d,d_loss,optim_g,g_loss,merge])
+            _,d_loss_, = sess.run([optim_d,d_loss])
+            _,g_loss_,merge_ = sess.run([optim_g,g_loss,merge])
             filewriter.add_summary(merge_,global_step=i)
             if i % 20 == 0:
                 print("step:{},g_loss:{:.4f},d_loss:{:.4f}".format(i,g_loss_,d_loss_))

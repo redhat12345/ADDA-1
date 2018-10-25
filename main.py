@@ -1,6 +1,9 @@
 import argparse
 import os
 import train 
+import tensorflow as tf 
+os.environ['CUDA_VISIBLE_DEVICES']='1'
+tf.device('/gpu:1')
 
 def main():
     parser = argparse.ArgumentParser(description="manual to this script")
